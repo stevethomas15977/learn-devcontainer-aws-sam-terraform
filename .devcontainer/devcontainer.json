@@ -1,0 +1,20 @@
+// https://aka.ms/devcontainer.json
+// https://github.com/microsoft/vscode-dev-containers/tree/v0.245.2/containers/ubuntu
+{
+    "name": "Devcontainer for stevethomas15977/custom-vscode-devcontainer",
+    "build": {
+        "dockerfile": "Dockerfile"
+    },
+    // https://github.com/devcontainers/features/tree/main/src
+    "features": {
+        // Just in case I need to build this image manually
+        "docker-in-docker": "latest"
+    },
+    "containerEnv": {
+        "AWS_ACCESS_KEY_ID": "${localEnv:AWS_ACCESS_KEY_ID}",
+        "AWS_SECRET_ACCESS_KEY": "${localEnv:AWS_SECRET_ACCESS_KEY}",
+        "AWS_DEFAULT_REGION": "${localEnv:AWS_DEFAULT_REGION}"
+    },
+    // https://aka.ms/vscode-remote/containers/non-root
+    "remoteUser": "vscode"
+}
