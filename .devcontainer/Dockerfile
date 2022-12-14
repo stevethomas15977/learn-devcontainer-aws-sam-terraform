@@ -3,8 +3,8 @@
 ARG VARIANT="ubuntu-20.04"
 FROM mcr.microsoft.com/vscode/devcontainers/base:0-${VARIANT}
 
-# Meta
-LABEL org.opencontainers.image.source=https://github.com/aureliojargas/devcontainer
+# Metadata
+LABEL org.opencontainers.image.source=https://github.com/stevethomas15977/custom-vscode-devcontainer
 LABEL org.opencontainers.image.description="Dev tools (Ubuntu)"
 
 # Install additional OS packages
