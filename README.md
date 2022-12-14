@@ -1,5 +1,5 @@
-# custom-vscode-devcontainer
-Learn how to create a custom vscode devcontainer 
+# learn-devcontainer-aws-sam-terraform
+Learn how to create a custom vscode devcontainer and AWS SAM with Terraform
 
 ## Environment variables
 $ENV:<AWS_ACCESS_KEY_ID> = '' \
